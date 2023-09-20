@@ -7,5 +7,4 @@ function projectGreation (input){
     console.log(result2);
 
 }
-
 projectGreation(["George","4"]);
