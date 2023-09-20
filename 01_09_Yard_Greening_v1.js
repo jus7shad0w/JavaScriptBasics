@@ -4,6 +4,7 @@ function house(input) {
     let priseForHouse1 = house1 * 7.61;
     let priseForHouse2 = house2 * 7.61;
     let discount = 0.18;
+    
     let discountForHouse1 = priseForHouse1 * discount;
     let resultForHouse1 = priseForHouse1 - discountForHouse1;
     let discountForHouse2 = priseForHouse2 * discount;
