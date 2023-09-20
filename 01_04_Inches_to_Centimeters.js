@@ -5,4 +5,4 @@ function inchesToCentimeters(input) {
     console.log(centimeters);
 }
 inchesToCentimeters(["5"]);
-inchesToCentimeters(["7"]);
+// inchesToCentimeters(["7"]);
