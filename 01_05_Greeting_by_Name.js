@@ -4,4 +4,4 @@ function greetingByName(input) {
 
     console.log(result);
 }
-greetingByName(["Simeon"]);
+greetingByName(["Simeon"]); //name can be different
