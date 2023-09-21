@@ -6,7 +6,6 @@ function aquarium(input) {
     let обем = дължина * ширина * височина;
     let litres = обем * 0.001;
     let waterNeeded = litres - (litres * percent)
-
     console.log(waterNeeded)
 }
 aquarium(["85", "75", "47", "17"])
