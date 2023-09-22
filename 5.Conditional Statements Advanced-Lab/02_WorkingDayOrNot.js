@@ -1,4 +1,5 @@
-function workingDay(day) {
+function workingDay(input) {
+let day = "Sunday";
     switch (day) {
         case "Monday":
         case "Tuesday":
@@ -16,7 +17,7 @@ function workingDay(day) {
             break;
     }
 }
-workingDay("Monday")
-workingDay("Sunday")
-workingDay("blabla")
+workingDay(["Monday"])
+// workingDay("Sunday")
+// workingDay("blabla")
 
