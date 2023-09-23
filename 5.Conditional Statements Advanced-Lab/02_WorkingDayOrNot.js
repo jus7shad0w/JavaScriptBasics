@@ -1,5 +1,5 @@
 function workingDay(input) {
-let day = "Sunday";
+    let day = input[0];
     switch (day) {
         case "Monday":
         case "Tuesday":
