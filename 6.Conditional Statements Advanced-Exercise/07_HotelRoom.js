@@ -1,52 +1,46 @@
-function vacation(arr) {
-    let days = Number(arr[1]);
-    let month = arr[0];
+function vacation(input) {
 
-    let studioPrice = 0;
-    let apartmentPrice = 0;
+    let month = input[0];
+    let days = Number(input[1]);
 
-    switch (month) {
-        case "May":
-        case "October":
-            apartmentPrice = 65;
+    let apartmentPriceTotal = 0;
+    let studioPriceTotal = 0;
 
-            if (days > 14) {
-                studioPrice = (days * 50) * 0.70;
-                apartmentPrice = (days * 65) * 0.90;
-            } else if (days > 7) {
-                studioPrice = (days * 50) * 0.95;
-            } else {
-                studioPrice = days * 50;
-            }
-            break;
-        case "June":
-        case "September":
-            studioPrice = 75.20;
-
-            if (days > 14) {
-                studioPrice = (days * studioPrice) * 0.80;
-                apartmentPrice = days * 68.70 * 0.90;
-            } else {
-                studioPrice = days * 75.20;
-                apartmentPrice = days * 68.70;
-            }
-            break;
-
-        case "July":
-        case "August":
-            studioPrice = 76 * days;
-            apartmentPrice = 77;
-            if (days > 14) {
-                apartmentPrice = (apartmentPrice * days) * 0.90;
-            }
-            break;
-        default:
-            break;
+    if (month === 'May' || month === 'October') {
+        apartmentPriceTotal = days * 65;
+        studioPriceTotal = days * 50;
+        if (days > 7 && days <= 14) {
+            studioPriceTotal = studioPriceTotal * 0.95;
+        }
+        if (days > 14) {
+            studioPriceTotal = studioPriceTotal * 0.7;
+        }
     }
 
-    console.log(`Apartment: ${apartmentPrice.toFixed(2)} lv.`);
-    console.log(`Studio: ${studioPrice.toFixed(2)} lv.`);
+    if (month === 'June' || month === 'September') {
+        apartmentPriceTotal = days * 68.70;
+        studioPriceTotal = days * 75.20;
+        if (days > 14) {
+            studioPriceTotal *= 0.8;
+        }
+    }
+
+    if (month === 'July' || month === 'August') {
+        apartmentPriceTotal = days * 77;
+        studioPriceTotal = days * 76;
+    }
+
+
+    if (days > 14) {
+        apartmentPriceTotal = apartmentPriceTotal * 0.90;
+    }
+
+
+    console.log(`Apartment: ${apartmentPriceTotal.toFixed(2)} lv.`);
+    console.log(`Studio: ${studioPriceTotal.toFixed(2)} lv.`);
 }
-vacation(["May", "15"])
-vacation(["June", "14"])
-vacation(["August", "20"])
+// vacation(["May", "15"])
+// vacation(["June", "14"])
+// vacation(["August", "20"])
+// vacation(["January", "20"])
+vacation(["August", "0"])
