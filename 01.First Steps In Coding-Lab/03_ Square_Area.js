@@ -5,5 +5,5 @@ function squareArea(input) {
 
 }
 
-// squareArea("5");
-// squareArea("25");
+// squareArea(["5"]);
+// squareArea(["25"]);
