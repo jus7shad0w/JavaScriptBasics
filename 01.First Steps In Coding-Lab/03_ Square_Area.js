@@ -1,8 +1,8 @@
 function squareArea(input) {
+    let a = Number(input[0]);
+    let area = a * a;
+    console.log(area);
 
-    let sideA = Number(input[0]);
-    let sumArea = sideA * sideA;
-
-    console.log(sumArea);
 }
+
 squareArea(["5"]);

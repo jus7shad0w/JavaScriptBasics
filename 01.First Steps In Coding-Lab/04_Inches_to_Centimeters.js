@@ -1,8 +1,10 @@
-function inchesToCentimeters(input) {
+function inchesToCentimeter(input) {
+    let centimeter = 2.54;
     let inches = Number(input[0]);
-    let centimeters = inches * 2.54;
+    let result = centimeter * inches;
+    console.log(result);
 
-    console.log(centimeters);
 }
-inchesToCentimeters(["5"]);
-// inchesToCentimeters(["7"]);
+
+inchesToCentimeter(["5"]);
+inchesToCentimeter(["7"]);
