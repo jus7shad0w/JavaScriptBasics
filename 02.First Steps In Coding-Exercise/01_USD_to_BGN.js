@@ -1,7 +1,11 @@
-function usdToBgn(input) {
-    let usdToBgn = Number(input[0]);
-    let result = 1.79549 * usdToBgn;
+function usdToBgn(quanty) {
 
+    const usd = 1.79549;
+    let result = quanty * usd;
     console.log(result);
+
 }
-usdToBgn(["22"]);
+
+usdToBgn(["22"])
+usdToBgn(["100"])
+usdToBgn(["12.5"])
