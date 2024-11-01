@@ -1,7 +1,9 @@
-function Radians(input) {
-    let Radians = Number(input[0]);
-    let degrees = Radians * 180 / Math.PI;
+function radiansCOnvertor(radians) {
 
+    let degrees = radians * 180 / Math.PI;
     console.log(degrees);
+
 }
-Radians(["3.1416"]);
+
+radiansCOnvertor(["3.1416"])
+radiansCOnvertor(["6.2832"])
